@@ -1,0 +1,150 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+:root {
+    /* farver */
+    --darkred: #400101;
+    --groen: #313B19;
+    --brun: #322616;
+    --gul: #E6C580;
+    --hvid: #0000;
+
+    --grey: #D3D3D3;
+    --darkgrey: #909090;
+
+
+    --whitesp: 5rem;
+}
+
+
+body {
+  font-family: sans-serif;
+  background: rgb(214,212,172);
+  background: radial-gradient(circle, rgba(214,212,172,1) 8%, rgba(189,196,142,1) 37%, rgba(106,110,78,1) 100%);
+}
+
+body{
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+  color: var(--groen);
+  font-family: 'Quicksand', sans-serif;
+}
+h2{
+  color: var(--groen);
+  font-family: 'Quicksand', sans-serif;
+}
+
+.logo{
+  width: 20%;
+}
+
+.forsidebillede{
+  width: 100%;
+
+}
+
+#wrap {
+  width: 90%;
+  margin: auto;
+}
+
+header, footer {
+  background-color: var(--lapiz);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+main > * {
+  padding: 23px;
+}
+
+#carte {
+  background-color: var(--ruby);
+  width: 60%;
+}
+
+#orders {
+  background-color: var(--emerald);
+  width: 33%;
+}
+
+.aMenu {
+  padding: 7px;
+  border-bottom: 1px dotted #fff;
+}
+
+#bill {
+  display: flex;
+}
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* for thanx.html */
+.emerald {
+  background-color: var(--emerald);
+}
+
+/* Selvstudiedag - Opgave 2 */
+/* Knapper */ /* botton https://getcssscan.com/css-buttons-examples */
+ button {
+  background-color: transparent;
+  border: 1.5px solid var(--darkred);
+  box-sizing: border-box;
+  color: var(--darkred);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 15px 20px;
+  position: relative;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin: 20%;
+}
+
+button:hover,
+button:active {
+  outline: 0;
+}
+
+button:hover {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button:before {
+  background-color: var(--grey);
+  content: "";
+  height: calc(100% + 2px);
+  position: absolute;
+  right: -7px;
+  top: -9px;
+  transition: background-color 300ms ease-in;
+  width: 100%;
+  z-index: -1;
+
+}
+
+button:hover:before {
+  background-color: var(--darkgrey);
+}
+
+@media (min-width: 768px) {
+  button {
+    padding: 16px 32px;
+  }
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bestilling</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+  :root {
+      /* farver */
+      --darkred: #400101;
+  }
+    button {
+      display: none;
+    }
+    a,
+    a:visited {
+      color: var(--darkred);
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+  <h1> <a href="index".html"> Tak for din bestilling </a> </h1>
+
+  </header>
+  <main>
+  <div class="emerald">Bord  <span id="tblNo"></span></div>
+  <div id="showOrder" class="emerald"></div>
+  </main>
+  <footer>
+    &copy; Trine Rahbek
+  </footer>
+  <script>
+    // date
+    d = new Date()
+
+    // random table number
+    tblNo.innerHTML = Math.floor(Math.random()*15) + 1
+
+    // the order receipt
+    showOrder.innerHTML = d + '<br>' + sessionStorage.getItem("yourOrders")
+  </script>
+
+</body>
+</html>
